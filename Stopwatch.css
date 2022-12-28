@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(38, 38, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    display: inline;
+    font-size: 3rem;
+    margin-top: 6rem;
+    color: white;
+    font-weight: 600;
+}
+
+span {
+    font-size: 12.5rem;
+    position: relative;
+    color: white;
+    font-weight: 700;
+}
+
+.stopwatch {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 25%;
+}
+
+.buttons button {
+    font-size: 2rem;
+    margin: 0 3rem;
+    background-color: aliceblue;
+    padding: .8rem 2rem;
+    cursor: pointer;
+    border: none;
+}
+
+#start {
+    background-color: rgb(114, 255, 114);
+    color: white;
+}
+
+#stop {
+    background-color: rgb(97, 142, 255);
+    color: white;
+}
+
+#reset {
+    background-color: rgb(255, 111, 85);
+    color: white;
+}
+
+@media only screen and (min-width:650px) and (max-width:950px) {
+    span {
+        font-size: 9rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    html {
+        font-size: 40%;
+    }
+}
+@media only screen and (max-width:400px){
+    span {
+        font-size: 8rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+}
